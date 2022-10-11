@@ -1,0 +1,48 @@
+.xin-button-info {
+  color: #fff !important;
+  background-color: #909399 !important;
+  border-color: #909399 !important;
+}
+
+.xin-button-warning {
+  color: #fff !important;
+  background-color: #e6a23c !important;
+  border-color: #e6a23c !important;
+}
+
+.xin-button-primary {
+  color: #fff !important;
+  background-color: #409eff !important;
+  border-color: #409eff !important;
+}
+
+.xin-button-success {
+  color: #fff !important;
+  background-color: #67c23a !important;
+  border-color: #67c23a !important;
+}
+
+.xin-button-danger {
+  color: #fff !important;
+  background-color: #f56c6c !important;
+  border-color: #f56c6c !important;
+}
+
+.xin-button {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: .1s;
+  font-weight: 500;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+}

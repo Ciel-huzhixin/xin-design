@@ -1,0 +1,89 @@
+<!--- Link.stories.mdx -->
+import { Meta, Story, Canvas, ArgTypes, Props, ArgsTable, Preview } from '@storybook/addon-docs';
+
+import Link from './link';
+
+<Meta 
+  title={"EXAMPLE/ Link 文字链接"} 
+  component={Link}
+/>
+
+<style>
+{`
+  .links a {
+    margin: 0 10px;
+  }
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+    font-size: 14px;
+    margin-bottom: 45px;
+    line-height: 2em;
+    font-size: 14px;
+  }
+  .table th:first-child {
+    padding-left: 10px;
+  }
+  .thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+  }
+  .tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+  }
+  .table .tbody > tr {
+    background-color: white;
+  }
+  .table .tbody > tr > td {
+    padding: 15px;
+    max-width: 250px;
+    color: #606266;
+    border: none;
+    border-top: 1px solid rgba(0,0,0,.1);
+  }
+
+`}
+</style>
+
+export const Template = (args) => <Link {...args} />
+
+# Link
+
+我们可以直接定义一个story，如下所示。
+
+
+<Preview withToolbar>
+  <Story name="warning">
+    <div className="links">
+      <Link>文字链接</Link>
+    <Link type="info">文字链接</Link>
+    <Link type="primary">文字链接</Link>
+    <Link type="success">文字链接</Link>
+    <Link type="warning">文字链接</Link>
+    <Link type="danger">文字链接</Link>
+    </div>
+  </Story>
+</Preview>
+
+<table className="table">
+  <thead className="thead"><tr><th>参数</th><th>说明</th><th>类型</th><th>可选值</th><th>默认值</th></tr>
+  </thead>
+  <tbody className="tbody"><tr><td>icon</td><td>设置头像的图标类型，参考 Icon 组件</td><td>string</td><td></td><td></td></tr><tr><td>size</td><td>设置头像的大小</td><td>number/string</td><td>number / large / medium / small</td><td>large</td></tr><tr><td>shape</td><td>设置头像的形状</td><td>string</td><td>circle / square</td><td>circle</td></tr><tr><td>src</td><td>图片头像的资源地址</td><td>string</td><td></td><td></td></tr><tr><td>srcSet</td><td>以逗号分隔的一个或多个字符串列表表明一系列用户代理使用的可能的图像</td><td>string</td><td></td><td></td></tr><tr><td>alt</td><td>描述图像的替换文本</td><td>string</td><td></td><td></td></tr><tr><td>fit</td><td>当展示类型为图片的时候，设置图片如何适应容器框</td><td>string</td><td>fill / contain / cover / none / scale-down</td><td>cover</td></tr></tbody>
+</table>
+
+
+|  表头   | 表头  |
+|  ----  | ----  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |
+
+
+
+
+
+
+<Props of={Link} />

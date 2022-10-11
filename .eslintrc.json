@@ -1,0 +1,31 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "semi": "warn",
+    "quotes": [
+      "warn",
+      "single"
+    ],
+    "global-require": "error",
+    "no-undef": "error",
+    "func-style": "warn",
+    "no-empty-function": "error",
+    "indent": [
+      "warn",
+      2
+    ]
+  },
+  "globals": {
+    "Promise": "off"
+  }
+}

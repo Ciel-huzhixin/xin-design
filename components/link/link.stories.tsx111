@@ -1,0 +1,99 @@
+import React from 'react';
+import { ComponentStory, ComponentMeta, Meta } from '@storybook/react';
+import Link from '.';
+import {
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  ArgsTable,
+  Stories,
+  PRIMARY_STORY,
+} from '@storybook/addon-docs/blocks';
+
+
+
+// 定义一个组件故事模式
+const Template: ComponentStory<typeof Link> = (args) => <Link {...args} />;
+// 基本组件
+export const warning = Template.bind({});
+warning.args = {
+  children: '文字链接',
+  type: 'warning'
+};
+
+export const danger = Template.bind({});
+danger.args = {
+  children: '文字链接',
+  type: 'danger'
+};
+
+
+export const primary = Template.bind({});
+primary.args = {
+  children: '文字链接',
+  type: 'primary'
+};
+
+
+
+export const success = Template.bind({});
+success.args = {
+  children: '文字链接',
+  type: 'success'
+};
+
+
+
+// Basic.parameters = {
+//   backgroundColor: {
+//     values: [
+//       { name: 'red', value: '#f00' },
+//       { name: 'green', value: '#0f0' },
+//       { name: 'blue', value: '#00f' },
+//     ],
+//   },
+// };
+
+
+// 元数据，Button组件的描述信息
+export default {
+  title: 'Example/Button 文字链接',
+  component: Link,
+  argTypes: {
+    backgroundColor: { control: 'color' },
+    type: {
+      control: { type: 'select' },
+      options: ['info', 'primary', 'success', 'danger', 'warning'],
+      defaultValue: { summary: "default" },
+      description: "类型",
+    },
+    children: {
+      control: { type: 'text' },
+      description: '子元素'
+    }
+  },
+  args: {
+    children: '文字链接',
+    type: 'danger',
+  },
+  parameters: {
+    docs: {
+      description: {
+        // component: '组件描述',
+      },
+      // page: () => (
+      //   <>
+      //     <Title />
+      //     <Subtitle children="常用的操作按钮。" />
+      //     <Description children="组件描述" />
+      //     <Primary />
+      //     <ArgsTable story={PRIMARY_STORY} />
+      //     <Stories title="danger" includePrimary={true} />
+      //     <Stories title="primary" includePrimary={true} />
+      //   </>
+      // ),
+    },
+    // componentSubtitle: "常用的操作按钮。"
+  }
+} as unknown as ComponentMeta<typeof Link>

@@ -1,0 +1,4 @@
+components/**/button-stories
+components/**/e2e
+components/**/unit
+components/**/styles

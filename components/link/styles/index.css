@@ -1,0 +1,38 @@
+.xin-link-info {
+  color: #909399 !important;
+}
+
+.xin-link-warning {
+  color: #e6a23c !important;
+}
+
+.xin-link-primary {
+  color: #409eff !important;
+}
+
+.xin-link-success {
+  color: #67c23a !important;
+}
+
+.xin-link-danger {
+  color: #f56c6c !important;
+}
+
+.xin-link {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  position: relative;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.xin-link:hover {
+  text-decoration: underline;
+}
